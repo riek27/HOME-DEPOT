@@ -1310,15 +1310,32 @@
         </div>
     </div>
 
-    <!-- Hero Section with Video Background -->
-    <section class="hero" id="home">
-        <div class="video-container">
-            <!-- Video background with fallback image -->
-            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80">
-                <source src="aseets/acinema.mp4" type="video/mp4">
-                <!-- Fallback image if video doesn't load -->
-                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Luxury interior background">
-            </video>
+   <!-- Hero Section with Video Background -->
+<section class="hero" id="home">
+  <div class="video-container">
+
+    <!-- Video background -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    >
+      <source src="assets/acinema.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Optional fallback image (CSS-controlled) -->
+    <img
+      src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+      alt="Luxury interior background"
+      class="video-fallback"
+    >
+
+  </div>
+</section>
+
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
